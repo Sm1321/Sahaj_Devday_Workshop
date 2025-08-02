@@ -20,7 +20,7 @@ class State(TypedDict):
 
 from langchain_tavily import TavilySearch
 
-search_tool=TavilySearch(max_results=2)
+search_tool = TavilySearch(max_results=2)
 
 
 def search_web(user_question):
