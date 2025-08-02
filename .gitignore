@@ -105,8 +105,8 @@ ipython_config.py
 #   This is especially recommended for binary packages to ensure reproducibility, and is more
 #   commonly ignored for libraries.
 #   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#poetry.lock
-#poetry.toml
+# poetry.lock
+# poetry.toml
 
 # pdm
 #   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
@@ -186,7 +186,7 @@ cython_debug/
 #  that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
 #  and can be added to the global gitignore or merged into this file. However, if you prefer, 
 #  you could uncomment the following to ignore the entire vscode folder
-# .vscode/
+.vscode/
 
 # Ruff stuff:
 .ruff_cache/
@@ -215,3 +215,39 @@ __pycache__/
 
 #Conda env
 sahaj_env
+
+
+# Shell & Editor History
+.bash_history
+.bash_profile
+.viminfo
+.viminfo.tmp
+.lesshst
+
+# Hugging Face cache/tokens
+token
+stored_tokens
+.cache/huggingface/
+.cache/huggingface/*
+
+# Other cache/data artifacts
+telemetry_user_id
+*.arrow
+*.tmp
+
+# Security-sensitive
+.git-credentials
+.gitconfig
+
+# Anaconda or Conda Keyring
+keyring
+
+# Dataset and test artifacts
+dataset_info.json
+imdb-test.arrow
+imdb-train.arrow
+unlabeled-unupervised.arrow
+*.train.arrow
+*.test.arrow
+*.json (if not part of config)
+
